@@ -127,7 +127,7 @@ local function kick_ban_res(extra, success, result)
         send_large_msg(receiver, 'کاربر @'..member..' ['..member_id..'] بن گلوبال شد')
 		banall_user(member_id)
       elseif get_cmd == 'unbanall' then
-        send_large_msg(receiver, 'کاربر @'..member..' ['..member_id..'] بن گلوبال شد')
+        send_large_msg(receiver, 'کاربر @'..member..' ['..member_id..'] از بن گلوبال ازاد شد')
 	    unbanall_user(member_id)
     end
 end
@@ -287,7 +287,7 @@ end
          	return false
         end
         	banall_user(targetuser)
-       		return 'User ['..user_id..' ] globally banned'
+       		return 'کاربر ['..user_id..' ] بن گلوبال شد'
      else
 	local cbres_extra = {
 		chat_id = msg.to.id,
@@ -307,7 +307,7 @@ end
           	return false
         end
        		unbanall_user(user_id)
-        	return 'User ['..user_id..' ] globally unbanned'
+        	return 'کاربر ['..user_id..' ] ازاد شد'
     else
 		local cbres_extra = {
 			chat_id = msg.to.id,
