@@ -111,7 +111,7 @@ local function pre_process(msg)
 			send_large_msg(receiver , "فلود مجاز نیست\n@"..username.."["..msg.from.id.."]\nوضعیت: کاربر محروم شد")
 		else
 			savelog(msg.to.id, name_log.." ["..msg.from.id.."] kicked for #spam")
-			send_large_msg(receiver , "فلود مجاز نیست\nName:"..name_log.."["..msg.from.id.."]\nوضعیت: کاربر محروم شد")
+			send_large_msg(receiver , "فلود مجاز نیست\nنام:"..name_log.."["..msg.from.id.."]\nوضعیت: کاربر محروم شد")
 		end
 	  end
       -- incr it on redis
