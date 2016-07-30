@@ -12,7 +12,7 @@ data[tostring(msg.to.id)]['group_type'] = matches[1]
 
 end
 if not is_sudo(msg) then 
-    return 'only for sudo !'
+    return 'متاسفیم فقط برای سودو!'
     end
 end
 return {
