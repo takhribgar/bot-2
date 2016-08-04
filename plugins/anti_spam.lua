@@ -108,7 +108,7 @@ local function pre_process(msg)
 	  if msg.to.type == 'chat' or msg.to.type == 'channel' then
 		if username then
 			savelog(msg.to.id, name_log.." @"..username.." ["..msg.from.id.."] kicked for #spam")
-			send_large_msg(receiver , "فلود مجاز نیست\n@"..username.."["..msg.from.id.."]\nوضعیت: کاربر محروم شد")
+			send_large_msg(receiver , " فلود مجاز نیست\n@"..username.."["..msg.from.id.."]\nوضعیت: کاربر محروم شد")
 		else
 			savelog(msg.to.id, name_log.." ["..msg.from.id.."] kicked for #spam")
 			send_large_msg(receiver , "فلود مجاز نیست\nنام:"..name_log.."["..msg.from.id.."]\nوضعیت: کاربر محروم شد")
